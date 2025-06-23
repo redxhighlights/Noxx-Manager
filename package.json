@@ -1,0 +1,16 @@
+{
+  "name": "redxbot",
+  "version": "1.0.0",
+  "description": "Advanced Discord bot with XP, roles, moderation, and fun commands.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Zero (Redx Corporation)",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0"
+  }
+}
