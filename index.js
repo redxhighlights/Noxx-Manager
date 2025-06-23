@@ -6,6 +6,16 @@ const {
   SlashCommandBuilder, AttachmentBuilder,
   ActionRowBuilder, StringSelectMenuBuilder, Events
 } = require('discord.js');
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('✅ RedxBot is alive!');
+});
+
+app.listen(3000, () => {
+  console.log('🌐 Web server running at http://localhost:3000');
+});
 
 const XP_FILE = './xp_data.json';
 let userData = fs.existsSync(XP_FILE) ? fs.readJSONSync(XP_FILE) : {};
